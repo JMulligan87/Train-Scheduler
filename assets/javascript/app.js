@@ -27,7 +27,14 @@ $("#add-train-btn").on("click", function (event) {
     frequency: trainFrequency
   };
 
-  
+  database.ref().push(newTrain);
+
+  console.log(newTrain.train);
+  console.log(newTrain.destination);
+  console.log(newTrain.first);
+  console.log(newTrain.frequency);
+
+
 
 
 
